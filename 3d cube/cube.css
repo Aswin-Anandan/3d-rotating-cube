@@ -1,0 +1,94 @@
+*{
+	background:black;
+}
+.spinner div {
+    position: absolute;
+	top: 50%;
+	left:50%;
+    width: 220px;
+    height: 220px;
+}
+
+.spinner .face1 { 
+    -webkit-transform: translateZ(110px);
+    -ms-transform: translateZ(110px);
+    transform: translateZ(110px);
+	background-image: url("file:///C:/Users/hp/OneDrive/Pictures/images/img1.jpg");
+	background-position: top;
+	background-size: cover;
+	opacity: 0.9;
+	
+}
+.spinner .face2 { 
+    -webkit-transform: rotateY(90deg) translateZ(110px); 
+    -ms-transform: rotateY(90deg) translateZ(110px); 
+    transform: rotateY(90deg) translateZ(110px); 
+		background-image: url("file:///C:/Users/hp/OneDrive/Pictures/images/img2.jpg");
+	background-position: top;
+	background-size: cover;
+	opacity: 0.9;
+}
+.spinner .face3 { 
+    -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(110px); 
+    -ms-transform: rotateY(90deg) rotateX(90deg) translateZ(110px); 
+    transform: rotateY(90deg) rotateX(90deg) translateZ(110px);
+		background-image: url("file:///C:/Users/hp/OneDrive/Pictures/images/img3.jpg");
+	background-position: top;
+	background-size: cover;
+	opacity: 0.9;
+}
+.spinner .face4 { 
+    -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(110px); 
+    -ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(110px); 
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(110px); 
+		background-image: url("file:///C:/Users/hp/OneDrive/Pictures/images/img4.jpg");
+	background-position: top;
+	background-size: cover;
+	opacity: 0.9;
+}
+.spinner .face5 { 
+    -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(110px); 
+    -ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(110px); 
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(110px); 
+		background-image: url("file:///C:/Users/hp/OneDrive/Pictures/images/img5.jpg");
+	background-position: top;
+	background-size: cover;
+	opacity: 0.9;
+}
+.spinner .face6 { 
+    -webkit-transform: rotateX(-90deg) translateZ(110px); 
+    -ms-transform: rotateX(-90deg) translateZ(110px); 
+    transform: rotateX(-90deg) translateZ(110px); 
+		background-image: url("file:///C:/Users/hp/OneDrive/Pictures/images/img6.jpg");
+	background-position: top;
+	background-size: cover;
+	opacity: 0.9;
+}
+
+.spinner {
+	margin-top: 200px;
+	margin-left: 600px;
+    -webkit-animation: spincube 12s ease-in-out infinite;
+    animation: spincube 12s ease-in-out infinite;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 60px 60px 0;
+    -ms-transform-origin: 60px 60px 0;
+    transform-origin: 60px 60px 0;
+}
+
+@-webkit-keyframes spincube {
+    16%      { -webkit-transform: rotateY(-80deg);                }
+    33%      { -webkit-transform: rotateX(-80deg) rotateZ(80deg); }
+    50%      { -webkit-transform: rotateY(170deg) rotateZ(80deg); }
+    66%      { -webkit-transform: rotateY(80deg) rotateX(80deg);  }
+    83%      { -webkit-transform: rotateX(80deg);                 }
+}
+@keyframes spincube {
+    16%      { -ms-transform: rotateY(-80deg); transform: rotateY(-80deg); }
+    33%      { -ms-transform: rotateX(-80deg) rotateZ(80deg); transform: rotateX(-80deg) rotateZ(80deg); }
+    50%      { -ms-transform: rotateY(170deg) rotateZ(80deg); transform: rotateY(170deg) rotateZ(80deg); }
+    66%      { -ms-transform: rotateY(80deg) rotateX(80deg); transform: rotateY(80deg) rotateX(80deg); }
+    83%      { -ms-transform: rotateX(80deg); transform: rotateX(80deg); }
+}
